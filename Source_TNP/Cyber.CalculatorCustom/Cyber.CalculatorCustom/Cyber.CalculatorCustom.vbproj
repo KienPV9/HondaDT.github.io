@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{FDB3A5F6-6882-4BCA-B3C9-3FD255C45D7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cyber.CalculatorCustom</RootNamespace>
+    <AssemblyName>Cyber.CalculatorCustom</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\</OutputPath>
+    <DocumentationFile>Cyber.CalculatorCustom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cyber.CalculatorCustom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cyber.Calculator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Calculator.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.ClsDllCalculator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.ClsDllCalculator.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.ClsTextBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.ClsTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.ClsTxtDateTime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.ClsTxtDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Color, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Export, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Fill, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Fill.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.From, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.From.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Input, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.InputCustom, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.InputCustom.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Loading, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Loading.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Print, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Print.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.SmLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.SmLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.SmLists, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.SmLists.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Smodb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Smodb.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Smreports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Smreports.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Support, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Voucher, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Cyber.Voucher.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Workprogress, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Workprogress.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Printing.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Utils.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="MayChamCong, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\cham_cong\cham_cong\Run\MayChamCong.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2.BE\BELapKHGX_Filter.designer.vb">
+      <DependentUpon>BELapKHGX_Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BELapKHGX_Filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BELapKHGX_KeHoach.Designer.vb">
+      <DependentUpon>BELapKHGX_KeHoach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BELapKHGX_KeHoach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BELapKHGX_XEM.designer.vb">
+      <DependentUpon>BELapKHGX_XEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BELapKHGX_XEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE.Designer.vb">
+      <DependentUpon>BEXEPXE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXELOC.Designer.vb">
+      <DependentUpon>BEXEPXELOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXELOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_IN_BB.Designer.vb">
+      <DependentUpon>BEXEPXE_IN_BB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_IN_BB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_KHF3.Designer.vb">
+      <DependentUpon>BEXEPXE_KHF3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_KHF3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_KXF3.Designer.vb">
+      <DependentUpon>BEXEPXE_KXF3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_KXF3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_PDS.Designer.vb">
+      <DependentUpon>BEXEPXE_PDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_PDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_SoHang.Designer.vb">
+      <DependentUpon>BEXEPXE_SoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_SoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_XEM.Designer.vb">
+      <DependentUpon>BEXEPXE_XEM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\BEXEPXE_XEM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\CapBienSo_Filter.designer.vb">
+      <DependentUpon>CapBienSo_Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\CapBienSo_Filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.BE\DoiBienSo.designer.vb">
+      <DependentUpon>DoiBienSo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2.BE\DoiBienSo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.CR\CRMQLLLTinh.designer.vb">
+      <DependentUpon>CRMQLLLTinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.CR\CRMQLLLTinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.CR\CRM_F3.designer.vb">
+      <DependentUpon>CRM_F3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.CR\CRM_F3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.CR\CRM_SK_Loc.Designer.vb">
+      <DependentUpon>CRM_SK_Loc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.CR\CRM_SK_Loc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.CR\CRM_Loc.Designer.vb">
+      <DependentUpon>CRM_Loc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.CR\CRM_Loc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.CR\CRM_Xem.designer.vb">
+      <DependentUpon>CRM_Xem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4.CR\CRM_Xem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName.Designer.vb">
+      <DependentUpon>FrmUserName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName_DnCapMK.designer.vb">
+      <DependentUpon>FrmUserName_DnCapMK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName_DnCapMK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName_DnCapTK.Designer.vb">
+      <DependentUpon>FrmUserName_DnCapTK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName_DnCapTK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName_DnDongTK.designer.vb">
+      <DependentUpon>FrmUserName_DnDongTK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8.FrmUser\FrmUserName_DnDongTK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDKHTN.designer.vb">
+      <DependentUpon>CDKHTN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDKHTN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogfile.designer.vb">
+      <DependentUpon>FrmLogfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmJob.designer.vb">
+      <DependentUpon>DmJob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTinhDD.designer.vb">
+      <DependentUpon>FrmTinhDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTinhDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\KhoXeTong.designer.vb">
+      <DependentUpon>KhoXeTong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\KhoXeTong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\TinhPhepNam.designer.vb">
+      <DependentUpon>TinhPhepNam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\TinhPhepNam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPORTDM.designer.vb">
+      <DependentUpon>IMPORTDM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IMPORTDM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KetNoiMayCC.designer.vb">
+      <DependentUpon>KetNoiMayCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KetNoiMayCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ROSHD.designer.vb">
+      <DependentUpon>ROSHD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSHD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROSDMVT.designer.vb">
+      <DependentUpon>ROSDMVT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSDMVT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROSHD_DK.designer.vb">
+      <DependentUpon>ROSHD_DK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSHD_DK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROSHD_Lenh.designer.vb">
+      <DependentUpon>ROSHD_Lenh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSHD_Lenh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROSNK.designer.vb">
+      <DependentUpon>ROSNK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSNK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROSNKFilter.Designer.vb">
+      <DependentUpon>ROSNKFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSNKFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROSNKView.Designer.vb">
+      <DependentUpon>ROSNKView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROSNKView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROUpdateGia.designer.vb">
+      <DependentUpon>ROUpdateGia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROUpdateGia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROXPTFilter.Designer.vb">
+      <DependentUpon>ROXPTFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROXPTFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROXPTView.Designer.vb">
+      <DependentUpon>ROXPTView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ROXPTView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThangToThangTk.Designer.vb">
+      <DependentUpon>ThangToThangTk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThangToThangTk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThangToThang.Designer.vb">
+      <DependentUpon>ThangToThang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThangToThang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNam.Designer.vb">
+      <DependentUpon>FrmNam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFF.Designer.vb">
+      <DependentUpon>FFF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FFF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VinBusExportExcel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="2.BE\BELapKHGX_Filter.resx">
+      <DependentUpon>BELapKHGX_Filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BELapKHGX_KeHoach.resx">
+      <DependentUpon>BELapKHGX_KeHoach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BELapKHGX_XEM.resx">
+      <DependentUpon>BELapKHGX_XEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE.resx">
+      <DependentUpon>BEXEPXE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXELOC.resx">
+      <DependentUpon>BEXEPXELOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE_IN_BB.resx">
+      <DependentUpon>BEXEPXE_IN_BB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE_KHF3.resx">
+      <DependentUpon>BEXEPXE_KHF3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE_KXF3.resx">
+      <DependentUpon>BEXEPXE_KXF3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE_PDS.resx">
+      <DependentUpon>BEXEPXE_PDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE_SoHang.resx">
+      <DependentUpon>BEXEPXE_SoHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\BEXEPXE_XEM.resx">
+      <DependentUpon>BEXEPXE_XEM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\CapBienSo_Filter.resx">
+      <DependentUpon>CapBienSo_Filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.BE\DoiBienSo.resx">
+      <DependentUpon>DoiBienSo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.CR\CRMQLLLTinh.resx">
+      <DependentUpon>CRMQLLLTinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.CR\CRM_F3.resx">
+      <DependentUpon>CRM_F3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.CR\CRM_SK_Loc.resx">
+      <DependentUpon>CRM_SK_Loc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.CR\CRM_Loc.resx">
+      <DependentUpon>CRM_Loc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.CR\CRM_Xem.resx">
+      <DependentUpon>CRM_Xem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.FrmUser\FrmUserName.resx">
+      <DependentUpon>FrmUserName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.FrmUser\FrmUserName_DnCapMK.resx">
+      <DependentUpon>FrmUserName_DnCapMK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.FrmUser\FrmUserName_DnCapTK.resx">
+      <DependentUpon>FrmUserName_DnCapTK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8.FrmUser\FrmUserName_DnDongTK.resx">
+      <DependentUpon>FrmUserName_DnDongTK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDKHTN.resx">
+      <DependentUpon>CDKHTN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogfile.resx">
+      <DependentUpon>FrmLogfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmJob.resx">
+      <DependentUpon>DmJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTinhDD.resx">
+      <DependentUpon>FrmTinhDD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\KhoXeTong.resx">
+      <DependentUpon>KhoXeTong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\TinhPhepNam.resx">
+      <DependentUpon>TinhPhepNam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPORTDM.resx">
+      <DependentUpon>IMPORTDM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KetNoiMayCC.resx">
+      <DependentUpon>KetNoiMayCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="ROSHD.resx">
+      <DependentUpon>ROSHD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROSDMVT.resx">
+      <DependentUpon>ROSDMVT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROSHD_DK.resx">
+      <DependentUpon>ROSHD_DK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROSHD_Lenh.resx">
+      <DependentUpon>ROSHD_Lenh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROSNK.resx">
+      <DependentUpon>ROSNK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROSNKFilter.resx">
+      <DependentUpon>ROSNKFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROSNKView.resx">
+      <DependentUpon>ROSNKView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROUpdateGia.resx">
+      <DependentUpon>ROUpdateGia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROXPTFilter.resx">
+      <DependentUpon>ROXPTFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROXPTView.resx">
+      <DependentUpon>ROXPTView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThangToThangTk.resx">
+      <DependentUpon>ThangToThangTk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThangToThang.resx">
+      <DependentUpon>ThangToThang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNam.resx">
+      <DependentUpon>FrmNam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFF.resx">
+      <DependentUpon>FFF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <Content Include="Resources\Xoa_BT_16x16.png" />
+    <Content Include="Resources\Xoa_BT_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

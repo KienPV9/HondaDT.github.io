@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{A3CB0389-1C06-4E42-B687-18715C43BFAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cyber.ListGroupCustom</RootNamespace>
+    <AssemblyName>Cyber.ListGroupCustom</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\</OutputPath>
+    <DocumentationFile>Cyber.ListGroupCustom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\</OutputPath>
+    <DocumentationFile>Cyber.ListGroupCustom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cyber.ClsDllCalculator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.ClsTextBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Cyber.Color, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.Export, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.Fill, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.From, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Cyber.Loading, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.Print, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.SmLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.SmLists, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.SmLists.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Smodb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.Support, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Cyber.Voucher, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Charts.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Printing.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Sparkline.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Utils.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDHD.designer.vb">
+      <DependentUpon>CDHD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDHD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDNTXT.designer.vb">
+      <DependentUpon>CDNTXT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDNTXT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDPHEP.Designer.vb">
+      <DependentUpon>CDPHEP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDPHEP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDRO.designer.vb">
+      <DependentUpon>CDRO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDRO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDTK30.Designer.vb">
+      <DependentUpon>CDTK30.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDTK30.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDVT.Designer.vb">
+      <DependentUpon>CDVT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDVT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMDMCH.designer.vb">
+      <DependentUpon>CRMDMCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRMDMCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMLOAINGAY.designer.vb">
+      <DependentUpon>CRMLOAINGAY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRMLOAINGAY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRMQLKHTN_Chuyen_Doi.designer.vb">
+      <DependentUpon>CRMQLKHTN_Chuyen_Doi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRMQLKHTN_Chuyen_Doi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLKHTN.designer.vb">
+      <DependentUpon>CRQLKHTN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLKHTN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLKHTN_Ban.Designer.vb">
+      <DependentUpon>CRQLKHTN_Ban.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLKHTN_Ban.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLKHTN_DL.Designer.vb">
+      <DependentUpon>CRQLKHTN_DL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLKHTN_DL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLKHTN_GD.Designer.vb">
+      <DependentUpon>CRQLKHTN_GD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLKHTN_GD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLKHTN_LaiThu.Designer.vb">
+      <DependentUpon>CRQLKHTN_LaiThu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLKHTN_LaiThu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLKHTN_Mua.designer.vb">
+      <DependentUpon>CRQLKHTN_Mua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLKHTN_Mua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLTN_Xem.designer.vb">
+      <DependentUpon>CRQLTN_Xem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLTN_Xem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRQLTN_Xem_KQ.designer.vb">
+      <DependentUpon>CRQLTN_Xem_KQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRQLTN_Xem_KQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMBH.designer.vb">
+      <DependentUpon>DMBH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMBH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmCapBac.designer.vb">
+      <DependentUpon>DmCapBac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmCapBac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCC.designer.vb">
+      <DependentUpon>DMCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmCCDT.Designer.vb">
+      <DependentUpon>DmCCDT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmCCDT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmCCDTChucDanh.Designer.vb">
+      <DependentUpon>DmCCDTChucDanh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmCCDTChucDanh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMChienDich.designer.vb">
+      <DependentUpon>DMChienDich.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMChienDich.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmChucDanh.designer.vb">
+      <DependentUpon>DmChucDanh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmChucDanh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRDmPTLH.Designer.vb">
+      <DependentUpon>CRDmPTLH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRDmPTLH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCKDV.Designer.vb">
+      <DependentUpon>DMCKDV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMCKDV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCKKD.Designer.vb">
+      <DependentUpon>DMCKKD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMCKKD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCTCV.designer.vb">
+      <DependentUpon>DMCTCV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMCTCV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCTKM.Designer.vb">
+      <DependentUpon>DMCTKM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMCTKM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMCTY.Designer.vb">
+      <DependentUpon>DMCTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMCTY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMDAILY.Designer.vb">
+      <DependentUpon>DMDAILY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMDAILY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMDGNV.Designer.vb">
+      <DependentUpon>DMDGNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMDGNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMDMNL.designer.vb">
+      <DependentUpon>DMDMNL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMDMNL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMGIACV.designer.vb">
+      <DependentUpon>DMGIACV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMGIACV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMGPK.Designer.vb">
+      <DependentUpon>DMGPK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMGPK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMHD.Designer.vb">
+      <DependentUpon>DMHD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMHD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMHHGD.Designer.vb">
+      <DependentUpon>DMHHGD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMHHGD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMHS.Designer.vb">
+      <DependentUpon>DMHS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMHS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMHTTT.designer.vb">
+      <DependentUpon>DMHTTT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMHTTT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMKH.designer.vb">
+      <DependentUpon>DMKH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMKH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMKPINS.Designer.vb">
+      <DependentUpon>DMKPINS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMKPINS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMKPI_PT.Designer.vb">
+      <DependentUpon>DMKPI_PT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMKPI_PT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMKX.designer.vb">
+      <DependentUpon>DMKX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMKX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMLoaiDT.designer.vb">
+      <DependentUpon>DMLoaiDT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMLoaiDT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmNhSC.designer.vb">
+      <DependentUpon>DmNhSC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmNhSC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmTTHS.designer.vb">
+      <DependentUpon>DmTTHS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmTTHS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmLyDoTL.designer.vb">
+      <DependentUpon>DmLyDoTL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmLyDoTL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmLyDoTD.designer.vb">
+      <DependentUpon>DmLyDoTD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmLyDoTD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmNhTraGop.designer.vb">
+      <DependentUpon>DmNhTraGop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmNhTraGop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmDvKhac.designer.vb">
+      <DependentUpon>DmDvKhac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmDvKhac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMSC.designer.vb">
+      <DependentUpon>DMSC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMSC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMSK.designer.vb">
+      <DependentUpon>DMSK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMSK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMSNLV.designer.vb">
+      <DependentUpon>DMSNLV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMSNLV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMTS.designer.vb">
+      <DependentUpon>DMTS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMTS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmTyLeBH.designer.vb">
+      <DependentUpon>DmTyLeBH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmTyLeBH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLTC2.designer.vb">
+      <DependentUpon>GLTC2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GLTC2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HopDong22.Designer.vb">
+      <DependentUpon>HopDong22.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HopDong22.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMXE.Designer.vb">
+      <DependentUpon>DMXE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMXE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMXepLoai.designer.vb">
+      <DependentUpon>DMXepLoai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMXepLoai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupKD.Designer.vb">
+      <DependentUpon>GroupKD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GroupKD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMLoaiVB.Designer.vb">
+      <DependentUpon>DMLoaiVB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMLoaiVB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DmMayCC.Designer.vb">
+      <DependentUpon>DmMayCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DmMayCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMPHI.designer.vb">
+      <DependentUpon>DMPHI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMPHI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRDmTTKH.designer.vb">
+      <DependentUpon>CRDmTTKH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRDmTTKH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMVT.designer.vb">
+      <DependentUpon>DMVT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DMVT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDmHs.designer.vb">
+      <DependentUpon>FrmDmHs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDmHs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CDHD.resx">
+      <DependentUpon>CDHD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDNTXT.resx">
+      <DependentUpon>CDNTXT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDPHEP.resx">
+      <DependentUpon>CDPHEP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDRO.resx">
+      <DependentUpon>CDRO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDTK30.resx">
+      <DependentUpon>CDTK30.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDVT.resx">
+      <DependentUpon>CDVT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMDMCH.resx">
+      <DependentUpon>CRMDMCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMLOAINGAY.resx">
+      <DependentUpon>CRMLOAINGAY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRMQLKHTN_Chuyen_Doi.resx">
+      <DependentUpon>CRMQLKHTN_Chuyen_Doi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLKHTN.resx">
+      <DependentUpon>CRQLKHTN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLKHTN_Ban.resx">
+      <DependentUpon>CRQLKHTN_Ban.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLKHTN_DL.resx">
+      <DependentUpon>CRQLKHTN_DL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLKHTN_GD.resx">
+      <DependentUpon>CRQLKHTN_GD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLKHTN_LaiThu.resx">
+      <DependentUpon>CRQLKHTN_LaiThu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLKHTN_Mua.resx">
+      <DependentUpon>CRQLKHTN_Mua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLTN_Xem.resx">
+      <DependentUpon>CRQLTN_Xem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRQLTN_Xem_KQ.resx">
+      <DependentUpon>CRQLTN_Xem_KQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMBH.resx">
+      <DependentUpon>DMBH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmCapBac.resx">
+      <DependentUpon>DmCapBac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMCC.resx">
+      <DependentUpon>DMCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmCCDT.resx">
+      <DependentUpon>DmCCDT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmCCDTChucDanh.resx">
+      <DependentUpon>DmCCDTChucDanh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMChienDich.resx">
+      <DependentUpon>DMChienDich.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmChucDanh.resx">
+      <DependentUpon>DmChucDanh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRDmPTLH.resx">
+      <DependentUpon>CRDmPTLH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMCKDV.resx">
+      <DependentUpon>DMCKDV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMCKKD.resx">
+      <DependentUpon>DMCKKD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMCTCV.resx">
+      <DependentUpon>DMCTCV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMCTKM.resx">
+      <DependentUpon>DMCTKM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMCTY.resx">
+      <DependentUpon>DMCTY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMDAILY.resx">
+      <DependentUpon>DMDAILY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMDGNV.resx">
+      <DependentUpon>DMDGNV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMDMNL.resx">
+      <DependentUpon>DMDMNL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMGIACV.resx">
+      <DependentUpon>DMGIACV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMGPK.resx">
+      <DependentUpon>DMGPK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMHD.resx">
+      <DependentUpon>DMHD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMHHGD.resx">
+      <DependentUpon>DMHHGD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMHS.resx">
+      <DependentUpon>DMHS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMHTTT.resx">
+      <DependentUpon>DMHTTT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMKH.resx">
+      <DependentUpon>DMKH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMKPINS.resx">
+      <DependentUpon>DMKPINS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMKPI_PT.resx">
+      <DependentUpon>DMKPI_PT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMKX.resx">
+      <DependentUpon>DMKX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMLoaiDT.resx">
+      <DependentUpon>DMLoaiDT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmNhSC.resx">
+      <DependentUpon>DmNhSC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmTTHS.resx">
+      <DependentUpon>DmTTHS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmLyDoTL.resx">
+      <DependentUpon>DmLyDoTL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmLyDoTD.resx">
+      <DependentUpon>DmLyDoTD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmNhTraGop.resx">
+      <DependentUpon>DmNhTraGop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmDvKhac.resx">
+      <DependentUpon>DmDvKhac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMSC.resx">
+      <DependentUpon>DMSC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMSK.resx">
+      <DependentUpon>DMSK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMSNLV.resx">
+      <DependentUpon>DMSNLV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMTS.resx">
+      <DependentUpon>DMTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmTyLeBH.resx">
+      <DependentUpon>DmTyLeBH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLTC2.resx">
+      <DependentUpon>GLTC2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HopDong22.resx">
+      <DependentUpon>HopDong22.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMXE.resx">
+      <DependentUpon>DMXE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMXepLoai.resx">
+      <DependentUpon>DMXepLoai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupKD.resx">
+      <DependentUpon>GroupKD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMLoaiVB.resx">
+      <DependentUpon>DMLoaiVB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DmMayCC.resx">
+      <DependentUpon>DmMayCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMPHI.resx">
+      <DependentUpon>DMPHI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRDmTTKH.resx">
+      <DependentUpon>CRDmTTKH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMVT.resx">
+      <DependentUpon>DMVT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDmHs.resx">
+      <DependentUpon>FrmDmHs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

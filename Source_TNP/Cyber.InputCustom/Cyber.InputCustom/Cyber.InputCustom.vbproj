@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC073ACE-808D-48A4-BE7B-017333D46BF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Cyber.InputCustom</RootNamespace>
+    <AssemblyName>Cyber.InputCustom</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\</OutputPath>
+    <DocumentationFile>Cyber.InputCustom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\</OutputPath>
+    <DocumentationFile>Cyber.InputCustom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CYBER_ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cyber.ArApTTPB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DongThap\Bo_Cai_Dat\Cyber.ArApTTPB.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.ClsDllCalculator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.ClsDllCalculator.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.ClsTextBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.ClsTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.ClsTxtDateTime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.ClsTxtDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Color, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Cyber.Export">
+      <HintPath>..\..\..\Cyber.Export.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cyber.Fill, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Fill.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.From, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.From.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Input, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.InputCustomPW, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.InputCustomPW.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Loading">
+      <HintPath>..\..\..\Cyber.Loading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cyber.Print">
+      <HintPath>..\..\..\Cyber.Print.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cyber.SmLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.SmLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.SmLists, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.SmLists.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Smodb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Smodb.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Support, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Voucher, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Voucher.dll</HintPath>
+    </Reference>
+    <Reference Include="Cyber.Workprogress, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Cyber.Workprogress.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Data.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Printing.v16.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Utils.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1.UI, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.Utils.v16.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraBars.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraEditors.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DevExpress.XtraGrid.v16.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BE\FrmPrintVoucherHDX_STT.designer.vb">
+      <DependentUpon>FrmPrintVoucherHDX_STT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\FrmPrintVoucherHDX_STT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\FrmPrintVoucherPBG.designer.vb">
+      <DependentUpon>FrmPrintVoucherPBG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\FrmPrintVoucherPBG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDX_LuuCoc.designer.vb">
+      <DependentUpon>HDX_LuuCoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDX_LuuCoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDX_Huy.designer.vb">
+      <DependentUpon>HDX_Huy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDX_Huy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDX_Vay.designer.vb">
+      <DependentUpon>HDX_Vay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDX_Vay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDC.designer.vb">
+      <DependentUpon>HDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDC\FrmXemTT.designer.vb">
+      <DependentUpon>FrmXemTT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDC\FrmXemTT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDC\FrmXuatWord.designer.vb">
+      <DependentUpon>FrmXuatWord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDC\FrmXuatWord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDC\Tao_nhieu_Xe.designer.vb">
+      <DependentUpon>Tao_nhieu_Xe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDC\Tao_nhieu_Xe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\HDX.designer.vb">
+      <DependentUpon>HDX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\HDX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\K05.designer.vb">
+      <DependentUpon>K05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\K05.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\KH7.designer.vb">
+      <DependentUpon>KH7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\KH7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PBG.designer.vb">
+      <DependentUpon>PBG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PBG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PBG_Vay.designer.vb">
+      <DependentUpon>PBG_Vay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PBG_Vay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\BE1.designer.vb">
+      <DependentUpon>BE1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\BE1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PCS.designer.vb">
+      <DependentUpon>PCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PN3.designer.vb">
+      <DependentUpon>PN3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PN3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PN5.Designer.vb">
+      <DependentUpon>PN5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PN5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PN8.designer.vb">
+      <DependentUpon>PN8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PN8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PNH.designer.vb">
+      <DependentUpon>PNH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PNH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PNL.Designer.vb">
+      <DependentUpon>PNL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PNL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\PPK.designer.vb">
+      <DependentUpon>PPK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\PPK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\SK1.designer.vb">
+      <DependentUpon>SK1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\SK1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\TD4.designer.vb">
+      <DependentUpon>TD4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\TD4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR\PQT.designer.vb">
+      <DependentUpon>PQT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR\PQT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CR\VOC.designer.vb">
+      <DependentUpon>VOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CR\VOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DO\PNI.designer.vb">
+      <DependentUpon>PNI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DO\PNI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DO\POD.designer.vb">
+      <DependentUpon>POD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DO\POD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterVoucher\Filter_PT1.designer.vb">
+      <DependentUpon>Filter_PT1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FilterVoucher\Filter_PT1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BE\BH1.designer.vb">
+      <DependentUpon>BH1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BE\BH1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\BC1.designer.vb">
+      <DependentUpon>BC1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\BC1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\FrmLocPHC.designer.vb">
+      <DependentUpon>FrmLocPHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\FrmLocPHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\FrmLocRoLDN.designer.vb">
+      <DependentUpon>FrmLocRoLDN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\FrmLocRoLDN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PB6.designer.vb">
+      <DependentUpon>PB6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PB6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\BN1.designer.vb">
+      <DependentUpon>BN1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\BN1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PC1.designer.vb">
+      <DependentUpon>PC1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PC1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PHC.designer.vb">
+      <DependentUpon>PHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PK1.designer.vb">
+      <DependentUpon>PK1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PK1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PNA.Designer.vb">
+      <DependentUpon>PNA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PNA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PT1.designer.vb">
+      <DependentUpon>PT1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PT1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PXD.designer.vb">
+      <DependentUpon>PXD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PXD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\PXK.Designer.vb">
+      <DependentUpon>PXK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\PXK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\TBH.designer.vb">
+      <DependentUpon>TBH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\TBH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\TBH\FrmLocHDSTBH.designer.vb">
+      <DependentUpon>FrmLocHDSTBH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\TBH\FrmLocHDSTBH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GL\TBH\FrmLocPT1TBH.designer.vb">
+      <DependentUpon>FrmLocPT1TBH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GL\TBH\FrmLocPT1TBH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\DG1.designer.vb">
+      <DependentUpon>DG1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\DG1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\DG2.designer.vb">
+      <DependentUpon>DG2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\DG2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\DT1.designer.vb">
+      <DependentUpon>DT1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\DT1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\DX1.designer.vb">
+      <DependentUpon>DX1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\DX1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\DX2.designer.vb">
+      <DependentUpon>DX2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\DX2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\Frm_KPI.designer.vb">
+      <DependentUpon>Frm_KPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\Frm_KPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HC3.designer.vb">
+      <DependentUpon>HC3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HC3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HC4.designer.vb">
+      <DependentUpon>HC4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HC4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HR1.Designer.vb">
+      <DependentUpon>HR1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HR6.designer.vb">
+      <DependentUpon>HR6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HR9.designer.vb">
+      <DependentUpon>HR9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HR7.designer.vb">
+      <DependentUpon>HR7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HR5.designer.vb">
+      <DependentUpon>HR5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HR8.designer.vb">
+      <DependentUpon>HR8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HRZ.designer.vb">
+      <DependentUpon>HRZ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HRZ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\KPI.designer.vb">
+      <DependentUpon>KPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\KPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HC1.designer.vb">
+      <DependentUpon>HC1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HC1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\HC2.designer.vb">
+      <DependentUpon>HC2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HC2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\RCC.designer.vb">
+      <DependentUpon>RCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\RCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\TD1.designer.vb">
+      <DependentUpon>TD1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\TD1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\TT1.designer.vb">
+      <DependentUpon>TT1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\TT1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintVoucher\FrmPrintVoucher.designer.vb">
+      <DependentUpon>FrmPrintVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintVoucher\FrmPrintVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintVoucher\FrmPrintVoucherBN1.Designer.vb">
+      <DependentUpon>FrmPrintVoucherBN1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintVoucher\FrmPrintVoucherBN1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintVoucher\FrmPrintVoucherHDK.designer.vb">
+      <DependentUpon>FrmPrintVoucherHDK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintVoucher\FrmPrintVoucherHDK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\QBN.designer.vb">
+      <DependentUpon>QBN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\QBN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\DCD.designer.vb">
+      <DependentUpon>DCD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\DCD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\DV1.designer.vb">
+      <DependentUpon>DV1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\DV1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\DV2.designer.vb">
+      <DependentUpon>DV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\DV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\DV3.designer.vb">
+      <DependentUpon>DV3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\DV3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\DV9.designer.vb">
+      <DependentUpon>DV9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\DV9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\FrmLocLDN.designer.vb">
+      <DependentUpon>FrmLocLDN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\FrmLocLDN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HD1.Designer.vb">
+      <DependentUpon>HD1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HD1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDI.designer.vb">
+      <DependentUpon>HDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDK.designer.vb">
+      <DependentUpon>HDK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDK\FrmbaoHiem.designer.vb">
+      <DependentUpon>FrmbaoHiem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDK\FrmbaoHiem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDK\FrmUpdateRoHang.designer.vb">
+      <DependentUpon>FrmUpdateRoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDK\FrmUpdateRoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\SVB.designer.vb">
+      <DependentUpon>SVB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR\SVB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DO\PDC.designer.vb">
+      <DependentUpon>PDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DO\PDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDM.Designer.vb">
+      <DependentUpon>HDM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDP.designer.vb">
+      <DependentUpon>HDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDS.Designer.vb">
+      <DependentUpon>HDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\HDS\FrmLocRo.designer.vb">
+      <DependentUpon>FrmLocRo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\HDS\FrmLocRo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\K30.designer.vb">
+      <DependentUpon>K30.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\K30.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\KHM.Designer.vb">
+      <DependentUpon>KHM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\KHM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\KPT.designer.vb">
+      <DependentUpon>KPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\KPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\LDN.designer.vb">
+      <DependentUpon>LDN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\LDN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\PC5.Designer.vb">
+      <DependentUpon>PC5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\PC5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\PDN.designer.vb">
+      <DependentUpon>PDN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\PDN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\PHS.designer.vb">
+      <DependentUpon>PHS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\PHS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\PNK.designer.vb">
+      <DependentUpon>PNK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\PNK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\PNK_Loc.designer.vb">
+      <DependentUpon>PNK_Loc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\PNK_Loc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\PT5.designer.vb">
+      <DependentUpon>PT5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\PT5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\ROXPTFilter.Designer.vb">
+      <DependentUpon>ROXPTFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\ROXPTFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\ROXPTView.Designer.vb">
+      <DependentUpon>ROXPTView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\ROXPTView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RO\TD2.designer.vb">
+      <DependentUpon>TD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RO\TD2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestCT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestCT.Designer.vb">
+      <DependentUpon>TestCT.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCopy.Designer.vb">
+      <DependentUpon>FrmCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sys.vb" />
+    <Compile Include="UG2.designer.vb">
+      <DependentUpon>UG2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UG2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BE\FrmPrintVoucherHDX_STT.resx">
+      <DependentUpon>FrmPrintVoucherHDX_STT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\FrmPrintVoucherPBG.resx">
+      <DependentUpon>FrmPrintVoucherPBG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDX_LuuCoc.resx">
+      <DependentUpon>HDX_LuuCoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDX_Huy.resx">
+      <DependentUpon>HDX_Huy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDX_Vay.resx">
+      <DependentUpon>HDX_Vay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDC.resx">
+      <DependentUpon>HDC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDC\FrmXemTT.resx">
+      <DependentUpon>FrmXemTT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDC\FrmXuatWord.resx">
+      <DependentUpon>FrmXuatWord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDC\Tao_nhieu_Xe.resx">
+      <DependentUpon>Tao_nhieu_Xe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\HDX.resx">
+      <DependentUpon>HDX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\K05.resx">
+      <DependentUpon>K05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\KH7.resx">
+      <DependentUpon>KH7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PBG.resx">
+      <DependentUpon>PBG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PBG_Vay.resx">
+      <DependentUpon>PBG_Vay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\BE1.resx">
+      <DependentUpon>BE1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PCS.resx">
+      <DependentUpon>PCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PN3.resx">
+      <DependentUpon>PN3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PN5.resx">
+      <DependentUpon>PN5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PN8.resx">
+      <DependentUpon>PN8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PNH.resx">
+      <DependentUpon>PNH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PNL.resx">
+      <DependentUpon>PNL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\PPK.resx">
+      <DependentUpon>PPK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\SK1.resx">
+      <DependentUpon>SK1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\TD4.resx">
+      <DependentUpon>TD4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR\PQT.resx">
+      <DependentUpon>PQT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR\VOC.resx">
+      <DependentUpon>VOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DO\PNI.resx">
+      <DependentUpon>PNI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DO\POD.resx">
+      <DependentUpon>POD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterVoucher\Filter_PT1.resx">
+      <DependentUpon>Filter_PT1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BE\BH1.resx">
+      <DependentUpon>BH1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\BC1.resx">
+      <DependentUpon>BC1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\FrmLocPHC.resx">
+      <DependentUpon>FrmLocPHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\FrmLocRoLDN.resx">
+      <DependentUpon>FrmLocRoLDN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PB6.resx">
+      <DependentUpon>PB6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\BN1.resx">
+      <DependentUpon>BN1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PC1.resx">
+      <DependentUpon>PC1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PHC.resx">
+      <DependentUpon>PHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PK1.resx">
+      <DependentUpon>PK1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PNA.resx">
+      <DependentUpon>PNA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PT1.resx">
+      <DependentUpon>PT1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PXD.resx">
+      <DependentUpon>PXD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\PXK.resx">
+      <DependentUpon>PXK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\TBH.resx">
+      <DependentUpon>TBH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\TBH\FrmLocHDSTBH.resx">
+      <DependentUpon>FrmLocHDSTBH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GL\TBH\FrmLocPT1TBH.resx">
+      <DependentUpon>FrmLocPT1TBH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\DG1.resx">
+      <DependentUpon>DG1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\DG2.resx">
+      <DependentUpon>DG2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\DT1.resx">
+      <DependentUpon>DT1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\DX1.resx">
+      <DependentUpon>DX1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\DX2.resx">
+      <DependentUpon>DX2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\Frm_KPI.resx">
+      <DependentUpon>Frm_KPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HC3.resx">
+      <DependentUpon>HC3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HC4.resx">
+      <DependentUpon>HC4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HR1.resx">
+      <DependentUpon>HR1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HR6.resx">
+      <DependentUpon>HR6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HR9.resx">
+      <DependentUpon>HR9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HR7.resx">
+      <DependentUpon>HR7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HR5.resx">
+      <DependentUpon>HR5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HR8.resx">
+      <DependentUpon>HR8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HRZ.resx">
+      <DependentUpon>HRZ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\KPI.resx">
+      <DependentUpon>KPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HC1.resx">
+      <DependentUpon>HC1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\HC2.resx">
+      <DependentUpon>HC2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\RCC.resx">
+      <DependentUpon>RCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\TD1.resx">
+      <DependentUpon>TD1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\TT1.resx">
+      <DependentUpon>TT1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="PrintVoucher\FrmPrintVoucher.resx">
+      <DependentUpon>FrmPrintVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintVoucher\FrmPrintVoucherBN1.resx">
+      <DependentUpon>FrmPrintVoucherBN1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintVoucher\FrmPrintVoucherHDK.resx">
+      <DependentUpon>FrmPrintVoucherHDK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\QBN.resx">
+      <DependentUpon>QBN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\DCD.resx">
+      <DependentUpon>DCD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\DV1.resx">
+      <DependentUpon>DV1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\DV2.resx">
+      <DependentUpon>DV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\DV3.resx">
+      <DependentUpon>DV3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\DV9.resx">
+      <DependentUpon>DV9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\FrmLocLDN.resx">
+      <DependentUpon>FrmLocLDN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HD1.resx">
+      <DependentUpon>HD1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDI.resx">
+      <DependentUpon>HDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDK.resx">
+      <DependentUpon>HDK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDK\FrmbaoHiem.resx">
+      <DependentUpon>FrmbaoHiem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDK\FrmUpdateRoHang.resx">
+      <DependentUpon>FrmUpdateRoHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\SVB.resx">
+      <DependentUpon>SVB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DO\PDC.resx">
+      <DependentUpon>PDC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDM.resx">
+      <DependentUpon>HDM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDP.resx">
+      <DependentUpon>HDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDS.resx">
+      <DependentUpon>HDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\HDS\FrmLocRo.resx">
+      <DependentUpon>FrmLocRo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\K30.resx">
+      <DependentUpon>K30.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\KHM.resx">
+      <DependentUpon>KHM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\KPT.resx">
+      <DependentUpon>KPT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\LDN.resx">
+      <DependentUpon>LDN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\PC5.resx">
+      <DependentUpon>PC5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\PDN.resx">
+      <DependentUpon>PDN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\PHS.resx">
+      <DependentUpon>PHS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\PNK.resx">
+      <DependentUpon>PNK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\PNK_Loc.resx">
+      <DependentUpon>PNK_Loc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\PT5.resx">
+      <DependentUpon>PT5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\ROXPTFilter.resx">
+      <DependentUpon>ROXPTFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\ROXPTView.resx">
+      <DependentUpon>ROXPTView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RO\TD2.resx">
+      <DependentUpon>TD2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestCT.resx">
+      <DependentUpon>TestCT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCopy.resx">
+      <DependentUpon>FrmCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UG2.resx">
+      <DependentUpon>UG2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CYBER_ICON.ico" />
+    <None Include="Resources\addfooter_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
