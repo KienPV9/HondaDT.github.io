@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class HDI
     Inherits Cyber.From.Frmvoucher
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,7 +17,7 @@ Partial Class HDI
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.CbbMa_GD = New System.Windows.Forms.ComboBox()
@@ -159,7 +159,6 @@ Partial Class HDI
         Me.Label48 = New System.Windows.Forms.Label()
         Me.TxtTy_Le_Phi = New ClsTextBox.txtTien_NT()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PopupMenuMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Detail, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailGRV, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2330,21 +2329,11 @@ Partial Class HDI
         Me.Label26.Tag = "Value"
         Me.Label26.Text = "Tỷ lệ phí"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(738, 175)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2245
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'HDI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1264, 648)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TxtTy_Le_Phi)
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.TxtTen_DVBH_H)
@@ -2617,6 +2606,8 @@ Partial Class HDI
         Me.Controls.SetChildIndex(Me.Label31, 0)
         Me.Controls.SetChildIndex(Me.TxtMa_DVBH_H, 0)
         Me.Controls.SetChildIndex(Me.TxtTen_DVBH_H, 0)
+        Me.Controls.SetChildIndex(Me.Label26, 0)
+        Me.Controls.SetChildIndex(Me.TxtTy_Le_Phi, 0)
         Me.Controls.SetChildIndex(Me.TxtUser_id, 0)
         Me.Controls.SetChildIndex(Me.CmdPhan_Bo, 0)
         Me.Controls.SetChildIndex(Me.CmdNew, 0)
@@ -2633,9 +2624,6 @@ Partial Class HDI
         Me.Controls.SetChildIndex(Me.CmdSms, 0)
         Me.Controls.SetChildIndex(Me.LabMa_Post, 0)
         Me.Controls.SetChildIndex(Me.CmdView, 0)
-        Me.Controls.SetChildIndex(Me.Label26, 0)
-        Me.Controls.SetChildIndex(Me.TxtTy_Le_Phi, 0)
-        Me.Controls.SetChildIndex(Me.Button1, 0)
         CType(Me.PopupMenuMaster, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Detail, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DetailGRV, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2791,5 +2779,4 @@ Partial Class HDI
     Friend WithEvents Label48 As System.Windows.Forms.Label
     Friend WithEvents TxtTy_Le_Phi As ClsTextBox.txtTien_NT
     Friend WithEvents Label26 As Label
-    Friend WithEvents Button1 As Button
 End Class
